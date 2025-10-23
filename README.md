@@ -45,6 +45,7 @@ If you have any questions or feedback, please don't hesitate to reach out to us 
   * [Step 5. Done. Start publishing](#step-5-done-start-publishing)
   * [Bonus. Update to the latest version of microfeed](#bonus-update-to-the-latest-version-of-microfeed)
 * [💻 FAQs](#-faqs)
+* [📁 File Management & Knowledge Base](#-file-management--knowledge-base)
 * [💪 Contributions](#-contributions)
   * [Run microfeed on local](#run-microfeed-on-local)
 * [🛡️ License](#%EF%B8%8F-license)
@@ -336,6 +337,50 @@ As of Feb 16, 2023, Cloudflare has not provided tools to to batch download all f
 You may need to write a script to use [S3-compatible APIs](https://developers.cloudflare.com/r2/data-access/s3-api/api/) to fetch all objects from a specific R2 bucket.
 
 </details>
+
+[Back to 📚TOC](#-table-of-contents)
+
+## 📁 File Management & Knowledge Base
+
+cloudcurio-feed includes an automated workflow for managing files and generating blog posts for cloudcurio.cc.
+
+The **File Management and Knowledge Base Sync** workflow provides:
+- 🔄 **Automated file synchronization** from Cloudflare R2 to your knowledge base
+- 📝 **Blog post generation** from managed content
+- ⏰ **Scheduled daily syncs** to keep content up-to-date
+- 📊 **Detailed reports** and file manifests
+
+### Quick Start
+
+1. Navigate to [Actions → File Management and Knowledge Base Sync](../../actions/workflows/file-management.yml)
+2. Click "Run workflow"
+3. Select your desired operation:
+   - `sync-files` - Sync files to knowledge base
+   - `generate-blog-posts` - Generate blog posts from content
+   - `full-sync` - Run complete sync and generation
+4. Select target environment (`production` or `preview`)
+5. Click "Run workflow" to start
+
+### Features
+
+**File Synchronization**
+- Catalogs all media files (images, audio, video, documents) from R2
+- Generates structured file manifests with metadata
+- Tracks file changes and sync status
+
+**Blog Post Generation**
+- Automatically creates blog post metadata from microfeed items
+- Extracts content, titles, descriptions, and media attachments
+- Outputs structured JSON ready for website integration
+
+**Automation**
+- Manual trigger for on-demand operations
+- Automatic sync on content changes (push to main)
+- Scheduled daily sync at 2:00 AM UTC
+
+### Documentation
+
+For detailed information, see the [File Management Workflow Documentation](docs/FILE_MANAGEMENT_WORKFLOW.md).
 
 [Back to 📚TOC](#-table-of-contents)
 
