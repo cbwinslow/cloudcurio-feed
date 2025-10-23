@@ -380,7 +380,8 @@ The **File Management and Knowledge Base Sync** workflow provides:
 
 ### Documentation
 
-For detailed information, see the [File Management Workflow Documentation](docs/FILE_MANAGEMENT_WORKFLOW.md).
+- **[Quick Start Guide](docs/QUICKSTART.md)** - Get started in 5 minutes
+- **[Full Documentation](docs/FILE_MANAGEMENT_WORKFLOW.md)** - Detailed workflow documentation
 
 [Back to 📚TOC](#-table-of-contents)
 

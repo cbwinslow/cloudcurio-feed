@@ -2,6 +2,8 @@
 
 This document describes the file management workflow for cloudcurio.cc that helps manage files and generate blog posts from the microfeed CMS.
 
+> **New to this workflow?** Check out the [Quick Start Guide](QUICKSTART.md) to get up and running in 5 minutes.
+
 ## Overview
 
 The File Management workflow provides automated tools to:
